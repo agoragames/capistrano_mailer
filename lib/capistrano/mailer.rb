@@ -35,7 +35,3 @@ module Capistrano
 end
 
 Capistrano.plugin :mailer, Capistrano::Configuration::CapistranoMailer
-
-if cap = Capistrano::Configuration.instance
-  cap.load("#{File.expand_path(File.dirname(__FILE__))}/mailer_recipes.rb")
-end
